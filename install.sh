@@ -1,2 +1,6 @@
-cp ./etc/bashrc ~/.bashrc
-cp ./etc/vimrc ~/.vimrc
+echo "etc: "
+cp -ai etc/. ~/
+
+echo "i3: "
+
+cp -ri i3 ~/.config/

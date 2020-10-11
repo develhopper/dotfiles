@@ -1,0 +1,26 @@
+#!/usr/bin/bash
+
+charge=$(acpi -b | grep -oP "\d+%" | tr -d "%")
+status=$(acpi -b | awk '{print $3}')
+if [[ $status == Dis* ]];
+then
+  echo $charge%
+  echo $charge%
+  if [[ $charge -lt 20 ]];
+  then
+    echo "#FF0000"
+  elif [[ $charge -lt 40 ]];
+  then
+    echo "#FFAE00"
+  elif [[ $charge -lt 60 ]];
+  then
+    echo "#FFF600"
+  elif [[ $charge -lt 85 ]];
+  then
+    echo "#A8FF00"
+  fi
+else
+  echo ⚡$charge%
+  echo ⚡$charge%
+  echo "#90CAF9"
+fi

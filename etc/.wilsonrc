@@ -1,0 +1,10 @@
+sayhi->echo "hi"
+clear->clear
+edit->vi ~/.wilsonrc
+help->cat ~/.wilsonrc
+tor->sudo systemctl start tor
+tor off->sudo systemctl stop tor
+htor->sudo tor --HTTPTunnelPort 9051
+webserver on->sudo systemctl start httpd mysqld
+webserver off->sudo systemctl stop httpd mysqld
+
