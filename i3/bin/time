@@ -1,0 +1,5 @@
+#!/bin/bash
+if [[ $BLOCK_BUTTON -eq 1 ]];then
+	date "+%d/%m/%Y"
+fi
+date "+%H:%M"
