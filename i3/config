@@ -113,8 +113,8 @@ set $ws2 "2: "
 set $ws3 "3: "
 set $ws4 "4: "
 set $ws5 "5: "
-set $ws6 "6"
-set $ws7 "7"
+set $ws6 "6: "
+set $ws7 "7 "
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -182,7 +182,7 @@ bindsym $mod+r mode "resize"
 workspace_auto_back_and_forth yes
 
 #Colors
-client.focused          #317572 #317572 #ffffff #2e9ef4 #317572
+client.focused          #303030 #303030 #ffffff #95A5A6 #317572
 hide_edge_borders both
 
 # Assignment
@@ -198,10 +198,18 @@ assign [class="code-oss"] number $ws3
 
 ### File Manager
 assign [class="Pcmanfm"] number $ws4
+assign [class="File-roller"] number $ws4
 
 ### Multimedia
 assign [class="vlc"] number $ws5
 assign [class="Lollypop"] number $ws5
+
+### Torrents and download managers
+assign [class="qBittorrent"] number $ws6
+assign [class="persepolis"] number $ws6
+
+### FTP Clients
+assign [class="Filezilla"] number $ws7
 
 #keyboard indicator
 bindsym --release Mod1+Shift+space exec --no-startup-id xkb-switch && exec pkill -RTMIN+14 i3blocks
@@ -224,10 +232,13 @@ bar {
 		font pango:DejaVuSans 10
 		position top
 		colors{
-			focused_workspace #317572 #317572 #ffffff
+			background #303030
+			inactive_workspace #303030 #303030 #C0C0C0
+			focused_workspace  #2C3E50 #2C3E50 #ffffff
 		}
 }
 
 
 # custom key bindings
 bindsym $mod+space exec --no-startup-id rofi -show drun -config=~/.config/rofi/config.rasi
+bindsym Print exec --no-startup-id shotgun ~/Pictures/ScreenShots/screenshot-`date +%Y-%m-%d-%H_%M_%S`.png
