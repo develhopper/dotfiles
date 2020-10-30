@@ -1,15 +1,10 @@
 #!/bin/bash
 
-if [[ $BLOCK_BUTTON -eq 1 ]];then
-	xkb-switch
-fi
-
 IFS=',' read -r -a layouts <<< `setxkbmap -query | grep layout |awk '{print $NF}'`
-
 kbl=`xset -q|grep -A 0 'LED'|cut -c59-67`
 
 if [[ $kbl -eq "00000002" ]]; then
-	echo ${layouts[0]^^}
+	setxkbmap ${layouts[1]},${layouts[0]}
 	else
-		echo ${layouts[1]^^}
+	setxkbmap ${layouts[0]},${layouts[1]}
 fi

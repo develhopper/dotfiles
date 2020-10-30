@@ -4,6 +4,10 @@ My personal all stuff configurations
 
 etc: all dotfiles in home directory
 
+bin: executables in 	~/.local/bin
+
+actions: custom actions for file-manager (Pcmanfm)
+
 i3: i3wm,i3blocks configuration and custom scripts
 
 rofi: my rofi theme

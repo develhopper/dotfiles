@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Set as Wallpaper
+Icon=user-desktop
+Profiles=profile-zero
+
+[X-Action-Profile profile-zero]
+MimeTypes=image/*;
+Name=Default Profile
+SelectionCount=1
+Exec=sh -c "ln -sf %f ~/Pictures/wallpaper.jpg && feh --bg-scale ~/Pictures/wallpaper.jpg"
+Terminal=true
