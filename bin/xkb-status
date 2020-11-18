@@ -2,10 +2,4 @@
 #IFS=',' read -r -a layouts <<< $BLOCK_INSTANCE
 IFS=',' read -r -a layouts <<< `setxkbmap -query | grep layout |awk '{print $NF}'`
 
-kbl=`xset -q|grep -A 0 'LED'|cut -c59-67`
-
-if [[ $kbl -eq "00000002" ]]; then
-	echo ${layouts[0]^^}
-	else
-		echo ${layouts[1]^^}
-fi
+echo ${layouts[0]^^}
