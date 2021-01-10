@@ -111,12 +111,12 @@ bindsym $mod+a focus parent
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
-set $ws4 "4: "
+set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6: "
-set $ws7 "7 "
-set $ws8 "8"
-set $ws9 "9"
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: 辶"
 set $ws10 "10"
 
 # switch to workspace
@@ -202,7 +202,7 @@ assign [class="File-roller"] number $ws4
 
 ### Multimedia
 assign [class="vlc"] number $ws5
-assign [class="Lollypop"] number $ws5
+assign [class="Audacious"] number $ws5
 
 ### Torrents and download managers
 assign [class="qBittorrent"] number $ws6
@@ -210,6 +210,12 @@ assign [class="persepolis"] number $ws6
 
 ### FTP Clients
 assign [class="Filezilla"] number $ws7
+
+### Chat
+assign [class="Skype"] number $ws8
+
+### Recording
+assign [class="obs"] number $ws9
 
 #keyboard indicator
 bindsym --release Mod1+Shift+space exec --no-startup-id xkb-switch && exec pkill -RTMIN+14 i3blocks
@@ -221,8 +227,8 @@ for_window [class="Pavucontrol"] floating enable
 
 # Autostart
 #exec --no-startup-id pcmanfm
-exec --no-startup-id xcompmgr
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
+exec --no-startup-id xcompmgr
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -242,3 +248,5 @@ bar {
 # custom key bindings
 bindsym $mod+space exec --no-startup-id rofi -show drun -config=~/.config/rofi/config.rasi
 bindsym Print exec --no-startup-id shotgun ~/Pictures/ScreenShots/screenshot-`date +%Y-%m-%d-%H_%M_%S`.png
+bindsym Shift+F1 exec --no-startup-id playerctl previous
+bindsym Shift+F2 exec --no-startup-id playerctl next
