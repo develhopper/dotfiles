@@ -49,13 +49,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -182,16 +175,18 @@ bindsym $mod+r mode "resize"
 workspace_auto_back_and_forth yes
 
 #Colors
-client.focused          #303030 #303030 #ffffff #95A5A6 #317572
+client.focused              #000000        #000000DD         #FFFFFF
+client.unfocused            #000000        #000000AA         #C0C0C0
 hide_edge_borders both
 
 # Assignment
 ### Terminals
 assign [class="Termite"] $ws1
+assign [class="Xfce4-terminal"] $ws1
 
 ### Browsers
 assign [class="Chromium"] number $ws2
-assign [class="Netsurf-gtk3"] number $ws2 
+assign [class="Opera"] number $ws2 
 
 ### Code
 assign [class="code-oss"] number $ws3
@@ -213,12 +208,13 @@ assign [class="Filezilla"] number $ws7
 
 ### Chat
 assign [class="Skype"] number $ws8
+assign [class="TelegramDesktop"] number $ws8
 
 ### Recording
 assign [class="obs"] number $ws9
 
 #keyboard indicator
-bindsym --release Mod1+Shift+space exec --no-startup-id xkb-switch && exec pkill -RTMIN+14 i3blocks
+bindsym  Mod1+Shift+space exec --no-startup-id xkb-switch && exec pkill -RTMIN+14 i3blocks
 
 exec_always --no-startup-id "setxkbmap -layout us,ir"
 
@@ -233,20 +229,22 @@ exec --no-startup-id xcompmgr
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
+
 bar {
-        status_command	i3blocks -c ~/.i3/i3blocks.conf 
+        status_command	i3blocks -c ~/.i3/i3blocks.conf
+		i3bar_command   i3bar -t
 		font pango:DejaVuSans 10
 		position top
 		colors{
-			background #303030
-			inactive_workspace #303030 #303030 #C0C0C0
-			focused_workspace  #2C3E50 #2C3E50 #ffffff
+			background #000000CC
+			inactive_workspace #000000 #000000 #C0C0C0
+			focused_workspace  #000000 #000000 #00bbff
 		}
 }
 
 
 # custom key bindings
-bindsym $mod+space exec --no-startup-id rofi -show drun -config=~/.config/rofi/config.rasi -show-icon
+bindsym $mod+space exec --no-startup-id rofi -show drun -config=~/.config/rofi/config.rasi -show-icons
 bindsym Print exec --no-startup-id shotgun ~/Pictures/ScreenShots/screenshot-`date +%Y-%m-%d-%H_%M_%S`.png
 bindsym Shift+F1 exec --no-startup-id playerctl previous
 bindsym Shift+F2 exec --no-startup-id playerctl next
