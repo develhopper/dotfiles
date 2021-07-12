@@ -1,65 +1,53 @@
-/**
- * ROFI Color theme
- * User: Rokit
-*/
-
 * {
-  base-bg: #222222;
-  selected-bg: #08b4c7;
-  base-color: #ffffffaa;
-  selected-color: #9da19f;
-  border-color: #00000066;
-  transparent: #00000000;
-  text-color: @base-color;
-  font: "Hack 12";
-}
-#window {
-  location:north;
-  width: 100%;
-  background-color: @base-bg;
-  margin:50px 10px 0px 10px;
-  children: [ horibox ];
-  border:2px;
-  border-color:#2db376;
-  border-radius:7px;
+  background-color: #282C33;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 512px;
+  bordercolor: #00a6ff;
 }
 
-#horibox {
-  background-color: @transparent;
-  orientation: horizontal;
-  children: [ prompt, textbox-prompt-colon, entry, listview ];
+window {
+location: north;
+margin: 25px 0 0 0;
+height: 60%;
+border-radius: 10px;
+border: 1;
+border-color: @bordercolor;
 }
-#prompt {
-  text-color: @base-color;
-  padding: 0.7em 0px 0.7em 10px;
-  background-color: @transparent;
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt,entry];
 }
-#textbox-prompt-colon  {
-  expand: false;
-  str: ":";
-  padding: 0.7em 10px 0.7em 0px;
-  text-color: @text-color;
-  background-color: @transparent;
+
+prompt {
+  padding: 16px;
+  border: 0 1px 0 0;
 }
-#entry {
-  padding: 0.7em;
-  text-color: @selected-color;
-  background-color: #222;
-  expand: false;
-  width: 10em;
+
+textbox {
+  background-color: #2e343f;
+  border: 0 0 1px 0;
+  border-color: #282C33;
+  padding: 8px 16px;
 }
-#listview {
-  background-color: @transparent;
-  layout: horizontal;
-  spacing: 5px;
-  lines: 100;
+
+entry {
+  padding: 16px;
 }
-#element {
-  background-color: @transparent;
-  padding: 0.7em;
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
 }
-#element selected {
-  border: 0px 1px;
-  text-color: #000;
-  background-color: @selected-bg;
+
+element {
+  border: 0 0 1px 0;
+  padding: 16px;
+}
+
+element selected {
+  background-color: #2e343f;
 }

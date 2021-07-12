@@ -246,7 +246,7 @@ bar {
 
 
 # custom key bindings
-bindsym $mod+space exec --no-startup-id rofi -show drun -config=~/.config/rofi/config.rasi
+bindsym $mod+space exec --no-startup-id rofi -show drun -config=~/.config/rofi/config.rasi -show-icon
 bindsym Print exec --no-startup-id shotgun ~/Pictures/ScreenShots/screenshot-`date +%Y-%m-%d-%H_%M_%S`.png
 bindsym Shift+F1 exec --no-startup-id playerctl previous
 bindsym Shift+F2 exec --no-startup-id playerctl next

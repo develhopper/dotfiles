@@ -4,6 +4,7 @@ mkdir -p ~/.config/.i3 ~/.config/rofi
 mkdir -p ~/.local/share/file-manager/actions
 mkdir -p ~/.config/termite
 mkdir -p ~/
+ln -sf ~/.config/i3 ~/.i3
 
 echo "etc: "
 cp -ai etc/. ~/
