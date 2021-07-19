@@ -181,7 +181,7 @@ hide_edge_borders both
 
 # Assignment
 ### Terminals
-assign [class="Termite"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="Xfce4-terminal"] $ws1
 
 ### Browsers
@@ -220,6 +220,8 @@ exec_always --no-startup-id "setxkbmap -layout us,ir"
 
 # Floating windows
 for_window [class="Pavucontrol"] floating enable
+
+for_window [class="code-oss"] border pixel 1
 
 # Autostart
 #exec --no-startup-id pcmanfm

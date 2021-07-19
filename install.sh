@@ -1,10 +1,5 @@
 echo "making directories: "
-mkdir -p ~/.local/bin
-mkdir -p ~/.config/.i3 ~/.config/rofi
-mkdir -p ~/.local/share/file-manager/actions
-mkdir -p ~/.config/termite
-mkdir -p ~/
-ln -sf ~/.config/i3 ~/.i3
+mkdir -p ~/.local/share/file-manager/
 
 echo "etc: "
 cp -ai etc/. ~/
@@ -12,14 +7,10 @@ cp -ai etc/. ~/
 echo "bin: "
 cp -ri bin ~/.local/
 
-echo "i3: "
-cp -ri i3 ~/.config/
-
-echo "rofi"
-cp -ri rofi ~/.config/
+echo "~/.config: "
+cp -ri config/* ~/.config/
 
 echo "file-manager custom actions: "
 cp -ri actions ~/.local/share/file-manager/
 
-echo "termite config: "
-cp -ri termite ~/.config
+ln -sf ~/.config/i3 ~/.i3
