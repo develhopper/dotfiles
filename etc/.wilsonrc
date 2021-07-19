@@ -1,12 +1,15 @@
-sayhi->echo "hi"
-clear->clear
+sudo->sudo echo "sudo"
+
+start {}->sudo systemctl start {}
+status {}->systemctl status {}
+stop {}->sudo systemctl stop {}
+
 new->vi ~/.wilsonrc
-todo->vi ~/.todo
-note->vi ~/.note
+
+edit->vi ~/.local/bin/wilson
+
+clear->clear
+
 help->cat ~/.wilsonrc
-tor->sudo systemctl start tor
-tor off->sudo systemctl stop tor
-htor->sudo tor --HTTPTunnelPort 9051
-webserver on->sudo systemctl start httpd mysqld
-webserver off->sudo systemctl stop httpd mysqld
-chromium->chromium --unsafely-treat-insecure-origin-as-secure="http://su8.parsvlp.ir" --user-data-dir=/tmp&
+
+say hi->echo "Hi my name is wilson"
