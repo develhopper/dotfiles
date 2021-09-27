@@ -1,19 +1,26 @@
 * {
-  background-color: #282C33;
-  border-color: #2e343f;
-  text-color: #8ca0aa;
-  spacing: 0;
-  width: 512px;
-  bordercolor: #00a6ff;
+  	background: #282C33;
+  	border: #2e343f;
+  	foreground: #8ca0aa;
+  	spacing: 0;
+  	width: 512px;
+ 	bordercolor: #00a6ff;
+	seperator: #1a94ff;
+}
+
+* {
+    spacing:    2;
+    border-color: @foreground;
+    background-color: transparent;
 }
 
 window {
-location: north;
-margin: 25px 0 0 0;
-height: 60%;
-border-radius: 10px;
-border: 1;
-border-color: @bordercolor;
+	location: north;
+	margin: 25px 0 0 0;
+	height: 60%;
+	border-radius: 10px;
+	border: 1;
+	border-color: @bordercolor;
 }
 
 inputbar {
@@ -23,13 +30,14 @@ inputbar {
 
 prompt {
   padding: 16px;
-  border: 0 1px 0 0;
+  border: 0;
 }
+
 
 textbox {
   background-color: #2e343f;
-  border: 0 0 1px 0;
-  border-color: #282C33;
+  border: 0;
+  border-color: @bordercolor;
   padding: 8px 16px;
 }
 
@@ -41,13 +49,29 @@ listview {
   cycle: false;
   margin: 0 0 -1px 0;
   scrollbar: false;
+  border: 0;
 }
 
 element {
-  border: 0 0 1px 0;
+  border: 0;
   padding: 16px;
 }
 
 element selected {
   background-color: #2e343f;
+}
+
+#element normal.normal {
+    text-color: @foreground;
+    background-color: @background;
+}
+
+#element normal.active {
+    text-color: @foreground;
+    background-color: @background;
+}
+
+#element alternate.normal {
+    text-color: @foreground;
+    background-color: @background;
 }
