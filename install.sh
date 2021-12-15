@@ -13,4 +13,4 @@ cp -ri config/* ~/.config/
 echo "file-manager custom actions: "
 cp -ri actions ~/.local/share/file-manager/
 
-ln -sf ~/.config/i3 ~/.i3
+ln -s ~/.config/i3 ~/.i3
