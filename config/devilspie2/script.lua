@@ -42,13 +42,14 @@ end
 function window_query(command)
 	query_type = command:match("%b[]")
 	query_str = split(command,"=")[2]
+	query_str = string.gsub(query_str,"\\s"," ")
 
 	if query_type == "[class]" then
 		return get_window_class() == query_str
 	elseif query_type == "[title]" then
 		return get_window_name():find(query_str)
 	elseif query_type == "[name]" then
-		return get_application_name() == query_str
+		return get_application_name():find(query_str)
 	end
 end
 

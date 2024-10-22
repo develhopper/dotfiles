@@ -3,10 +3,13 @@ app[class]=Xfce4-terminal center workspace:1
 
 # Workspace 2
 app[class]=Opera maximize workspace:2
+app[class]=Opera\sdeveloper maximize workspace:2
+app[class]=Vivaldi-stable maximize workspace:2
 
 # Workspace 3
 app[class]=code-oss workspace:3
 app[class]=jetbrains-studio workspace:3
+app[class]=Code workspace:3
 
 # Workspace 4
 app[class]=Thunar workspace:4 center
@@ -15,12 +18,13 @@ app[class]=File-roller workspace:4 size:600x600 center
 # Workspace 5
 app[class]=vlc workspace:5
 
+
 # Workspace 6
-app[class]=qBittorrent workspace:6 
-app[class]=persepolis workspace:6 center
+app[class]=obsidian workspace:6 maximize
 
 # Workspace 7
-app[class]=Filezilla workspace:7
+app[class]=qBittorrent workspace:7 
+app[class]=persepolis workspace:7 center
 
 # Workspace 8
 app[class]=Skype workspace:8 maximize
@@ -28,3 +32,10 @@ app[class]=TelegramDesktop workspace:8 maximize
 
 # Workspace 9
 app[class]=obs workspace:9
+
+# Workspace 10
+app[class]=steam workspace:10
+
+
+#Conky
+app[class]=Conky pin_window
