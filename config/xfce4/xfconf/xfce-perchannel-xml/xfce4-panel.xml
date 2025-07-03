@@ -1,0 +1,283 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="2"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="double" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="size" type="uint" value="18"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="4"/>
+        <value type="int" value="3"/>
+        <value type="int" value="12"/>
+        <value type="int" value="5"/>
+        <value type="int" value="24"/>
+        <value type="int" value="11"/>
+        <value type="int" value="6"/>
+        <value type="int" value="2"/>
+        <value type="int" value="8"/>
+        <value type="int" value="7"/>
+        <value type="int" value="14"/>
+      </property>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0.92905405405405406"/>
+      </property>
+      <property name="enter-opacity" type="uint" value="84"/>
+      <property name="leave-opacity" type="uint" value="84"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="length-adjust" type="bool" value="true"/>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="position" type="string" value="p=10;x=0;y=0"/>
+      <property name="length" type="double" value="34.407027818448022"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="48"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="15"/>
+        <value type="int" value="16"/>
+        <value type="int" value="17"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0.92905405405405406"/>
+      </property>
+      <property name="enter-opacity" type="uint" value="90"/>
+      <property name="leave-opacity" type="uint" value="90"/>
+      <property name="length-adjust" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="numbering" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="true"/>
+      <property name="wrap-workspaces" type="bool" value="false"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="requesting a wi-fi network address for “arch”…"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (81%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (94%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (68%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (82%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (71%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (80%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (62%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (69%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (75%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (84%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (77%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (87%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (99%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (89%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (90%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (70%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (100%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (85%)"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (97%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (95%)"/>
+        <value type="string" value="wi-fi network connection “arch” active: arch (92%)"/>
+        <value type="string" value="wi-fi network connection “redmi_4018” active: redmi_4018 (100%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (74%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (89%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (67%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (97%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (65%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (75%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (72%)"/>
+        <value type="string" value="remmina"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (79%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (82%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (90%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (84%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (85%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (87%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (92%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (99%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (94%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (95%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (100%)"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (81%)"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="wi-fi network connection “irancell-td-gp2101-446338” active: irancell-td-gp2101-446338 (80%)"/>
+        <value type="string" value="no network connection"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="T3fEhiOffv"/>
+        <value type="string" value="xzrRzgoXG2"/>
+        <value type="string" value="rv_dW3VoXL"/>
+        <value type="string" value="znkr2GhVhv"/>
+        <value type="string" value="mj85vjG_4r"/>
+        <value type="string" value="2HIxrjXZuT"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="9f1opuOARU"/>
+        <value type="string" value="lwe_Adzfld"/>
+        <value type="string" value="eSZgSvP7Xm"/>
+        <value type="string" value="VUGtRHBNPM"/>
+        <value type="string" value="ckIBYMfL4l"/>
+        <value type="string" value="EypCxuU7V5"/>
+        <value type="string" value="hGKnNmpp-l"/>
+        <value type="string" value="8cLDRyWxI7"/>
+        <value type="string" value="hZw1rWEXkS"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="ITn74h2bM3"/>
+        <value type="string" value="r-FEnsVQpa"/>
+        <value type="string" value="3UbGB9NxI_"/>
+        <value type="string" value="rPI1vWQDDZ"/>
+        <value type="string" value="chrome_status_icon_3"/>
+        <value type="string" value="chrome_status_icon_2"/>
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="XrCSBNz_DL"/>
+        <value type="string" value="YxLpqXPh7p"/>
+        <value type="string" value="UapPbWnMwv"/>
+        <value type="string" value="wRKny49vuF"/>
+        <value type="string" value="9ssA9dJuFw"/>
+        <value type="string" value="8Bwx4kuY_V"/>
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="TelegramDesktop"/>
+        <value type="string" value="svWyIZEaCr"/>
+        <value type="string" value="jYvl69uRby"/>
+        <value type="string" value="kKtYcsXsxq"/>
+        <value type="string" value="qrHsTOgDJ4"/>
+        <value type="string" value="E1mSkpjmkt"/>
+        <value type="string" value="xwsVPSUVMb"/>
+        <value type="string" value="Qto8gYncCk"/>
+        <value type="string" value="zzEKeRu11u"/>
+        <value type="string" value="rqMf-Ffj6X"/>
+        <value type="string" value="sRBb3ffJAz"/>
+        <value type="string" value="xzVzDqZcVP"/>
+        <value type="string" value="9-__quZvdy"/>
+        <value type="string" value="2piTVvUqGy"/>
+        <value type="string" value="uO3aXJ4Sue"/>
+        <value type="string" value="GKAnnuf_E5"/>
+        <value type="string" value="OpPcA3Y3kT"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="known-players" type="string" value="firefox;org.telegram.desktop;Vivaldi;vlc"/>
+    </property>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-font" type="string" value="Source Code Pro Semi-Bold 10"/>
+      <property name="digital-time-format" type="string" value="%I:%M %p"/>
+      <property name="mode" type="uint" value="2"/>
+      <property name="show-week-numbers" type="bool" value="true"/>
+    </property>
+    <property name="plugin-14" type="string" value="actions">
+      <property name="appearance" type="uint" value="1"/>
+      <property name="button-title" type="uint" value="0"/>
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="+switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="+restart"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="showdesktop">
+      <property name="show-on-hover" type="bool" value="false"/>
+    </property>
+    <property name="plugin-16" type="string" value="separator"/>
+    <property name="plugin-1" type="string" value="whiskermenu">
+      <property name="view-mode" type="int" value="1"/>
+      <property name="launcher-show-name" type="bool" value="true"/>
+      <property name="button-icon" type="string" value="archlinux-logo"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="button-single-row" type="bool" value="false"/>
+      <property name="recent" type="array">
+        <value type="string" value="xfce4-file-manager.desktop"/>
+        <value type="string" value="vivaldi-stable.desktop"/>
+        <value type="string" value="code.desktop"/>
+        <value type="string" value="org.telegram.desktop.desktop"/>
+        <value type="string" value="Hiddify.desktop"/>
+        <value type="string" value="org.xfce.mousepad.desktop"/>
+        <value type="string" value="org.remmina.Remmina.desktop"/>
+        <value type="string" value="org.inkscape.Inkscape.desktop"/>
+        <value type="string" value="wps-office-prometheus.desktop"/>
+        <value type="string" value="wps-office-wps.desktop"/>
+      </property>
+      <property name="profile-shape" type="int" value="0"/>
+      <property name="default-category" type="int" value="0"/>
+      <property name="menu-width" type="int" value="481"/>
+      <property name="menu-height" type="int" value="534"/>
+      <property name="launcher-show-description" type="bool" value="true"/>
+    </property>
+    <property name="plugin-2" type="string" value="xkb">
+      <property name="display-type" type="uint" value="2"/>
+      <property name="display-name" type="uint" value="1"/>
+      <property name="show-notifications" type="bool" value="false"/>
+      <property name="display-tooltip-icon" type="bool" value="false"/>
+      <property name="group-policy" type="uint" value="0"/>
+      <property name="display-scale" type="uint" value="80"/>
+    </property>
+    <property name="plugin-5" type="string" value="xfce4-notes-plugin"/>
+    <property name="notes" type="empty">
+      <property name="global" type="empty">
+        <property name="version" type="string" value="1.11.2"/>
+      </property>
+      <property name="new-window" type="empty">
+        <property name="always-on-top" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-24" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-17" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="grouping" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="include-all-monitors" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="include-all-workspaces" type="bool" value="false"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+    </property>
+    <property name="plugin-7" type="string" value="battery"/>
+  </property>
+</channel>
